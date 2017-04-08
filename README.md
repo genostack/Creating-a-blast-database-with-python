@@ -24,9 +24,9 @@ Project workflow:
 - Create tables and initialize a new database for your blast results.
 - Create program files to access the database and extract information from relevant rows, in order to answer project questions.
 
-# # Future directions for this project
+## Future directions for this project
 * Run this project on 
-# # Contact information
+## Contact information
 If there are any questions about this project, feel free to contact me at wongak626@gmail.com
 
 
