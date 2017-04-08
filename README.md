@@ -1,10 +1,18 @@
-# Creating-a-blast-database-with-python
-- Computes pairwise blast alignments for any two species' proteomes and stores the alignments in SQL relational database.
-- Allows you to retrieve two proteins specified by their accessions from the relational database. 
-- Allows you to retrieve pairs of orthologous proteins that are mutually best hits in the species' proteomes.
-- Provides the blast alignment for a protein query specified by the genbank accession number in blast_alignment.py file .
-- Also provides the bit score and e-value of the alignment. Derived organism and protein name of the query is also outputted as a result.
-- Provides the orthologous protein accession number, when a protein is queried with blast_find_orthologs.py file.
+# Python-based blast database program
+
+Functions of this program:
+* Computes pairwise blast alignments for two species' proteomes and stores their alignments in a relational database.
+* Allows you to retrieve the blast alignment for two proteins (specified by their accessions) from the relational database.
+* Finds pairs of orthologous proteins that are mutually best hits in the species' proteomes.
+
+This project was completed for the Georgetown Graduate Bioinformatics Computing course in Fall 2015.
+
+# # Background
+Orthologs are genes in different species that have evolved from a common ancestral gene due to speciation. Orthologous genes are transcribed, and then translated subsequently to orthologous proteins. These orthologous proteins retain the same functionality over the course of evolution in their respective species. 
+
+# # Installation
+This program uses the following software tools:
+
 
 Testing the program:
 - Protein accession GI#: 78706572, or waclaw protein, was run with the program file blast_alignment.py to test the alignment retrieval program.
@@ -16,14 +24,9 @@ Project workflow:
 - Create tables and initialize a new database for your blast results.
 - Create program files to access the database and extract information from relevant rows, in order to answer project questions.
 
-Instructions for installation:
-- Install Sqlite to your computer from: https://www.sqlite.org/download.html
-- Download all of the files
-- Make sure to have drosoph-ribosome.fasta and yeast-ribosome.fasta in your designated home folder
-- Conduct local blasts.
-- Run blast_FASTA_parser.py.
-- Run Blast_results_XML_parser.py.
-- Run blast_alignment.py to find alignment with query protein (genbank accession input).
-- Run blast_find_ortohologs.py to find orthologous protein pairs with query protein (genbank accession input).
+# # Future directions for this project
+* Run this project on 
+# # Contact information
+If there are any questions about this project, feel free to contact me at wongak626@gmail.com
 
 
