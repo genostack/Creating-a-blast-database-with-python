@@ -7,10 +7,10 @@ Functions of this program:
 
 This project was completed for the Georgetown Graduate Bioinformatics Computing course in Fall 2015.
 
-# # Background
+## Background
 Orthologs are genes in different species that have evolved from a common ancestral gene due to speciation. Orthologous genes are transcribed, and then translated subsequently to orthologous proteins. These orthologous proteins retain the same functionality over the course of evolution in their respective species. 
 
-# # Installation
+## Installation
 This program uses the following software tools:
 
 
