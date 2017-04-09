@@ -12,20 +12,22 @@ Orthologs are genes in different species that have evolved from a common ancestr
 
 ## Installation
 This program uses the following software tools:
+* Biopython package - This package will be used to parse through XML and Fasta files. The package can be downloaded with instructions for installation within the following [link](http://biopython.org/wiki/Download).
+* SQLobject package - This package will be used to initialize a relational database from the results of our blast. The package can be downloaded with instructions for installation within the following [link](http://www.sqlobject.org/download.html).
+* NCBI blast tool - This tool will be used to conduct blast searches and provide us with all of the alignment results to be loaded into the relational database. The package can be downloaded with instructions for installation within the following [link](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
+* SQLite studio - This is the relational database manager that you will use to create your database from python scripts. This program can be downloaded [here](https://sqlitestudio.pl/index.rvt?act=download).
 
 
-Testing the program:
-- Protein accession GI#: 78706572, or waclaw protein, was run with the program file blast_alignment.py to test the alignment retrieval program.
-- The same protein was used to test the blast_find_orthologs.py program file
-
-Project workflow:
+## Project workflow
 - Run a local blast with a query proteome against a subject proteome. Conduct a reciprocal blast.
 - Parse blast results for top hit alignment pairs, and extract relevant information to be loaded into tables.
 - Create tables and initialize a new database for your blast results.
 - Create program files to access the database and extract information from relevant rows, in order to answer project questions.
 
 ## Future directions for this project
-* Run this project on 
+* Create a better front end for user query
+* Upgrade relational database usage from SQLite studio to MySQL
+
 ## Contact information
 If there are any questions about this project, feel free to contact me at wongak626@gmail.com
 
