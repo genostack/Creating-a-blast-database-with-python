@@ -5,7 +5,7 @@ Functions of this program:
 * Allows you to retrieve the blast alignment for two proteins (specified by their accessions) from the relational database.
 * Finds pairs of orthologous proteins that are mutually best hits in the species' proteomes.
 
-This project was completed for the Georgetown Graduate Bioinformatics Computing course in Fall 2015.
+This project was completed for the Georgetown graduate bioinformatics computing course in Fall 2015.
 
 ## Background
 Orthologs are genes in different species that have evolved from a common ancestral gene due to speciation. Orthologous genes are transcribed, and then translated subsequently to orthologous proteins. These orthologous proteins retain the same functionality over the course of evolution in their respective species. 
