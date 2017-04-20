@@ -3,12 +3,12 @@
 Functions of this program:
 * Computes pairwise blast alignments for two species' proteomes and stores their alignments in a relational database.
 * Allows you to retrieve the blast alignment for two proteins (specified by their accessions) from the relational database.
-* Finds pairs of orthologous proteins that are mutually best hits in the species' proteomes.
+* Finds pairs of orthologous proteins that are mutually best blast hits in the species' proteomes.
 
 This project was completed for the Georgetown graduate bioinformatics computing course in Fall 2015.
 
 ## Background
-Orthologs are genes in different species that have evolved from a common ancestral gene due to speciation. Orthologous genes are transcribed, and then translated subsequently to orthologous proteins. These orthologous proteins retain the same functionality over the course of evolution in their respective species. 
+Orthologs are genes in different species that have evolved from a common ancestral gene due to speciation. Orthologous genes are transcribed, and then translated subsequently to orthologous proteins. These orthologous proteins retain the same functionality over the course of evolution in their respective species. Protein sequences that are closely related in sequence, are defined to be orthologs for this project.
 
 ## Installation
 This program uses the following software tools:
@@ -20,8 +20,8 @@ This program uses the following software tools:
 
 ## Project workflow
 - Run a local blast with a query proteome against a subject proteome. Conduct a reciprocal blast.
-- Parse blast results for top hit alignment pairs, and extract relevant information to be loaded into tables.
-- Create tables and initialize a new database for your blast results.
+- Parse blast results for top hit alignment pairs, and load into relational database as a table.
+- Create tables and initialize a new database for both species' proteomes.
 - Create program files to access the database and extract information from relevant rows, in order to answer project questions.
 
 ## Future directions for this project
