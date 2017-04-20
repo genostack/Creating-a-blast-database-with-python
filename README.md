@@ -2,7 +2,7 @@
 
 Functions of this program:
 * Computes pairwise blast alignments for two species' proteomes and stores their alignments in a relational database.
-* Allows you to retrieve the blast alignment for two proteins (specified by their accessions) from the relational database.
+* Allows you to retrieve high scoring blast alignments for two proteins (specified by their accessions) from a relational database through python.
 * Finds pairs of orthologous proteins that are mutually best blast hits in the species' proteomes.
 
 This project was completed for the Georgetown graduate bioinformatics computing course in Fall 2015.
@@ -19,14 +19,15 @@ This program uses the following software tools:
 
 
 ## Project workflow
-- Run a local blast with a query proteome against a subject proteome. Conduct a reciprocal blast.
+- Run a local blast with a query proteome against a subject proteome. Conduct a reciprocal blast. Full species proteome or genome sequences can be obtained from NCBI's blast database [here](ftp://ftp.ncbi.nlm.nih.gov/blast/db/). For this project we used species proteomes in FASTA format.
 - Parse blast results for top hit alignment pairs, and load into relational database as a table.
 - Create tables and initialize a new database for both species' proteomes.
 - Create program files to access the database and extract information from relevant rows, in order to answer project questions.
 
 ## Future directions for this project
-* Create a better front end for user query
-* Upgrade relational database usage from SQLite studio to MySQL
+* Create a better front end for user query.
+* Upgrade relational database usage from SQLite studio to MySQL.
+* Upload program that allows you to run command line local blast through python.
 
 ## Contact information
 If there are any questions about this project, feel free to contact me at wongak626@gmail.com
