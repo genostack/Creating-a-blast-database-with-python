@@ -19,10 +19,18 @@ This program uses the following software tools:
 
 
 ## Project workflow
-- Run a local blast with a query proteome against a subject proteome. Conduct a reciprocal blast. Full species proteome or genome sequences can be obtained from NCBI's blast database [here](ftp://ftp.ncbi.nlm.nih.gov/blast/db/). For this project we used species proteomes in FASTA format.
+- Run a local blast with a query proteome against a subject proteome. Conduct a reciprocal blast. Full species proteome or genome sequences can be obtained from NCBI's blast database [here](https://ftp.ncbi.nlm.nih.gov/blast/db/). For this project we used species proteomes in FASTA format.
 - Parse blast results for top hit alignment pairs, and load into relational database as a table.
 - Create tables and initialize a new database for both species' proteomes.
 - Create program files to access the database and extract information from relevant rows, in order to answer project questions.
+
+## Instructions for use
+Each species' proteome needs to be initialized as a database for blast. Create a folder or directory to store your database FASTA files. Change directory into this folder and run:
+```
+makeblastdb - help
+makeblastdb - in "name or full path of proteome in FASTA format" -dbtype prot
+```
+
 
 ## Future directions for this project
 * Create a better front end for user query.
