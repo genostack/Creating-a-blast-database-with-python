@@ -30,6 +30,8 @@ Each species' proteome needs to be initialized as a database for blast. Create a
 makeblastdb - help
 makeblastdb - in "name or full path of proteome in FASTA format" -dbtype prot
 ```
+This sets the database to whichever FASTA sequence you designate in blast, and the query proteome will be run against it. Be sure to run this command on the other proteome as well.
+
 
 
 ## Future directions for this project
