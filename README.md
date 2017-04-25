@@ -32,6 +32,34 @@ makeblastdb - in "name or full path of proteome in FASTA format" -dbtype prot
 ```
 This sets the database to whichever FASTA sequence you designate in blast, and the query proteome will be run against it. Be sure to run this command on the other proteome as well.
 
+After setting your database sequences, run a local blast using NCBI's blast tool with the following command:
+```
+python local_blast.py "path of one species' proteome" "path of other species' proteome"
+```
+This will generate our blast results in XML format.
+
+Inititate your database with the following script:
+```
+python model_blast.py
+```
+This will instantiate your protein database, and alignment database.
+
+Load your relational database tables with the protein sequences:
+```
+python Blast_fasta_parser.py
+```
+Run this command to parse the blast results and load alignments that are high scoring (low expected value and high score) into an alignment table on the relational database:
+```
+python Blast_results_XML_parser.py
+```
+Retrieve blast alignment results with the following command:
+```
+python blast_alignment.py "protein ID number query"
+```
+Run this command to retrieve an orthologous protein to your protein query z:
+```
+python blast_find_orthologs.py "protein ID number query"
+```
 
 
 ## Future directions for this project
