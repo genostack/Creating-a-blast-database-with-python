@@ -46,7 +46,7 @@ This will instantiate your protein database, and alignment database.
 
 Load your relational database tables with the protein sequences:
 ```
-python Blast_fasta_parser.py
+python Blast_fasta_parser.py "Path for one species fasta proteome file" "Path for other species fasta proteome file"
 ```
 Run this command to parse the blast results and load alignments that are high scoring (low expected value and high score) into an alignment table on the relational database:
 ```
